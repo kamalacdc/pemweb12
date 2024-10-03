@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Belajar Membuat Form</title>
+</head>
+<body>
+  <h1>Belajar Membuat Form</h1>
+  <form>
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" value="Nama kamu"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label>Jenis Kelamin:</label>
+    <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki" checked>
+    <label for="laki-laki">Laki-laki</label>
+    <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+    <label for="perempuan">Perempuan</label><br><br>
+
+    <label>Hobi:</label>
+    <input type="checkbox" id="membaca" name="hobi" value="membaca">
+    <label for="membaca">Membaca buku</label>
+    <input type="checkbox" id="menulis" name="hobi" value="menulis" checked>
+    <label for="menulis">Menulis</label>
+    <input type="checkbox" id="memancing" name="hobi" value="memancing">
+    <label for="memancing">Memancing</label><br><br>
+
+    <label for="kota">Asal Kota:</label>
+    <select id="kota" name="kota">
+      <option value="semarang">Semarang</option>
+      <option value="jakarta">Jakarta</option>
+      <option value="bandung">Bandung</option>
+    </select><br><br>
+
+    <label for="komentar">Komentar Anda:</label><br>
+    <textarea id="komentar" name="komentar" rows="5" cols="40">Silahkan katakan isi hati Anda
+</textarea><br><br>
+
+    <input type="submit" value="Mulai Proses!">
+  </form>
+</body>
+</html>
