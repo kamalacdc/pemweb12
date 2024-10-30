@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementasi JavaScript</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+            color: rgb(0, 91, 176);
+        }
+    </style>
+</head>
+
+<body align="center">
+    <h1>Selamat Datang di Halaman JavaScript!</h1>
+    <p>Masukkan nama Anda:</p>
+    <input type="text" id="namaInput" placeholder="Nama Anda">
+    <button id="greetButton">Sapa Saya!</button>
+    <div id="message"></div>
+    <script>
+        // Mengambil elemen dari DOM
+        const greetButton = document.getElementById("greetButton");
+        const namaInput = document.getElementById("namaInput");
+        const messageDiv = document.getElementById("message");
+
+        // Menambahkan event listener ke tombol
+        greetButton.addEventListener("click", function () {
+            // Mengambil nilai dari input
+            const nama = namaInput.value;
+
+            if (nama) {
+                // Menampilkan pesan sapaan
+                messageDiv.innerText = "Halo, " + nama + "! Selamat datang di website kami !";
+            } else {
+                messageDiv.innerText = "Silakan masukkan nama Anda.";
+            }
+        });
+    </script>
+</body>
+
+</html>
